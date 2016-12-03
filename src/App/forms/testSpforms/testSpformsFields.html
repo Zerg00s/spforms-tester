@@ -1,0 +1,20 @@
+<div class='col-md-4'>
+    <!--Title | Type: Text -->
+    <h4>{{f.Title.FieldDisplayName}}</h4>
+    <input name='Title' id='Title' ng-model='f.Title.Value' type='text' class='full-width'
+    />
+</div><div class='col-md-4'>
+    <!--Milti | Type: Note -->
+    <h4>{{f.Milti.FieldDisplayName}}</h4>
+    <textarea name='Milti' id='Milti' ng-model='f.Milti.Value'></textarea>
+</div><div class='col-md-4'>
+    <!--Numb | Type: Number -->
+    <h4>{{f.Numb.FieldDisplayName}}</h4>
+    <input name='Numb' id='Numb' ng-model='f.Numb.Value' type='number' min='0'
+    />
+</div><div class='col-md-4'>
+    <!--dat | Type: DateTime -->
+    <h4>{{f.dat.FieldDisplayName}}</h4>
+    <datetime-picker name='dat' id='dat' ng-model='f.dat.Value' format='calendarFormat'
+    />
+</div>

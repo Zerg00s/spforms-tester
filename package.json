@@ -1,0 +1,26 @@
+{
+  "name": "sp-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denis",
+  "license": "MIT",
+  "dependencies": {
+    "url-join": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-spsave": "*",
+    "gulp-watch": "*",
+    "gulp-prompt": "*",
+    "sppull": "*",
+    "path": "*",
+    "sp-live-reload": "*",
+    "through2": "*",
+    "cpass": "*",
+    "jsonfile": "*"
+  }
+}

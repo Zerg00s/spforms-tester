@@ -1,0 +1,23 @@
+<h1>HELLO IVAN</h1>     
+<div class='col-md-4'>
+    <!--Title | Type: Text -->
+    <h4>{{f.Title.FieldDisplayName}}</h4>
+    <input name='Title' id='Title' ng-model='f.Title.Value' type='text' class='full-width'
+    />
+
+</div><div class='col-md-4'>
+    <!--Pers | Type: User -->
+    <h4>{{f.Pers.FieldDisplayName}}</h4>
+    <div name='Pers' id='Pers' ng-model='f.Pers.user' ui-people pp-is-multiuser='{{false}}'
+    pp-width='220px' pp-account-type='User,DL,SecGroup,SPGroup'></div>
+</div><div class='col-md-4'>
+    <!--Date | Type: DateTime -->
+    <h4>{{f.Date.FieldDisplayName}}</h4>
+    <datetime-picker name='Date' id='Date' ng-model='f.Date.Value' format='calendarFormat'
+    />
+</div><div class='col-md-4'>
+    <!--Numb | Type: Number -->
+    <h4>{{f.Numb.FieldDisplayName}}</h4>
+    <input name='Numb' id='Numb' ng-model='f.Numb.Value' type='number' min='0'
+    />
+</div>

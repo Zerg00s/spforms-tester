@@ -94,7 +94,7 @@ gulp.task("watch-assets", ['touch-conf'], function () {
         gulp.src(event.path, {
             base: config.watch.base
         }).pipe(spsave(config.spsave.coreOptions, config.spsave.creds));
-    });
+    }); 
 });
 
 gulp.task("publish", ['touch-conf'], function () {

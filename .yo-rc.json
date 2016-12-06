@@ -8,5 +8,13 @@
     "spRootFolder": "Assets",
     "dlRootFolder": "/App",
     "bowerlibs": []
+  },
+  "generator-spforms": {
+    "appname": "sp app",
+    "siteUrl": "https://jolera365.sharepoint.com/sites/senate",
+    "username": "dmolodtsov@jolera.com",
+    "password": "caab2fb2a77a090fa52add9e10fa867c51c34c6c1fe2701a6bc9f75aa41a0df0db4aa968f0d01e402ad682639c55646btxMRV48bvT8V3LsnYbxh92U+Kj4jZcCpHPJHARdhX+lAR+y8b52uXm94H3u3rY43tlJb2DnBhFauWm/FHMOnuR2cSy9i7lL+9vSAZPO4Y36PTbz6wyjGaklO1en7y+HutTpJxMFoLBxbROWuhpB9ig6fNF0Sd76bkUtPM/xG7KU=",
+    "spRootFolder": "_catalogs/masterpage/spf",
+    "dlRootFolder": "./src"
   }
 }

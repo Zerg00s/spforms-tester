@@ -7,10 +7,6 @@ var config = require('./gulp.config');
 var spforms = require('spforms');
 var Cpass = require("cpass");
 var cpass = new Cpass();
-var prompt = require("gulp-prompt");
-var fs = require('fs');
-var path = require('path');
-var urljoin = require('url-join');
 
 
 var through = require('through2');
@@ -37,7 +33,6 @@ gulp.task('default', function() {
         }));
 });
 
-
 gulp.task('generate',_=>{
     var pass = cpass.decode('33021b9cb7bba3418e86cbf3eb046068cdb401f262cdba70b4eba9bc848d66a74ef8e559f52392a08d010edd8d0b25b7efEh6rwbd5JoIvq0dH3YMg==');
     var spformsHelper = spforms({username:'dmolodtsov@jolera.com', password: pass});
@@ -52,7 +47,6 @@ gulp.task('generate',_=>{
     spformsHelper.generateAngularForm(listSettings);
 
 });
- 
  
 
 //Get new secure string pass:

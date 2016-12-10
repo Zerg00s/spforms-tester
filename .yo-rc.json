@@ -13,9 +13,9 @@
     "appname": "sp app",
     "siteUrl": "https://jolera365.sharepoint.com/sites/senate",
     "username": "dmolodtsov@jolera.com",
-    "password": "26454edd5f1051d4ef6eb91be51ca2dd19c73759cb81a68c077dbad344a01e06c34de7bb5a5ea0124e0dc11f4283ebeboxJrv4Z22MEwblM7p8hz3OuSmpeKNcKKr6ShVj2B1wnDTGD+tUnOhUrzzq9SJMCYuAPXQoTRVEEn5VW3/dEglYJn5uKvs7/n2lKhGcwkqCD3HQyrroQr69qGUtB5IA+m6JGdGudAmvXqEv+bi7nsE+Hr2meK/mzj1JdShi1BSxc=",
+    "password": "0997200ebb3852ac6fffcc9f17d2e5adac85ba4a83a18c9187712d4134fafd9e67a4ccca1de1ce5ed176a90152ba7b25gFuHPRT2A5WVA0Ud9wLN3w==",
     "spRootFolder": "Assets",
     "dlRootFolder": "./src",
-    "listTitle": "TestList"
+    "listTitle": "TestGenerator"
   }
 }

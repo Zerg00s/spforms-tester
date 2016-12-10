@@ -33,8 +33,23 @@ gulp.task('default', function() {
         }));
 });
 
+gulp.task('getLists', _=>{
+
+    var pass = cpass.decode('0997200ebb3852ac6fffcc9f17d2e5adac85ba4a83a18c9187712d4134fafd9e67a4ccca1de1ce5ed176a90152ba7b25gFuHPRT2A5WVA0Ud9wLN3w==');
+    var spformsHelper = spforms({username:'dmolodtsov@jolera.com', password: pass});
+    
+    var siteSettings = {
+        siteUrl: 'https://jolera365.sharepoint.com/sites/senate/',
+    };
+
+    spformsHelper.getLists(siteSettings).then(function(lists){
+        console.log('results: ' + lists);
+    });
+
+});
+
 gulp.task('generate',_=>{
-    var pass = cpass.decode('33021b9cb7bba3418e86cbf3eb046068cdb401f262cdba70b4eba9bc848d66a74ef8e559f52392a08d010edd8d0b25b7efEh6rwbd5JoIvq0dH3YMg==');
+    var pass = cpass.decode('0997200ebb3852ac6fffcc9f17d2e5adac85ba4a83a18c9187712d4134fafd9e67a4ccca1de1ce5ed176a90152ba7b25gFuHPRT2A5WVA0Ud9wLN3w==');
     var spformsHelper = spforms({username:'dmolodtsov@jolera.com', password: pass});
     
     var listSettings = {

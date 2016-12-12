@@ -35,7 +35,7 @@ gulp.task('default', function() {
 
 gulp.task('getLists', _=>{
 
-    var pass = cpass.decode('0997200ebb3852ac6fffcc9f17d2e5adac85ba4a83a18c9187712d4134fafd9e67a4ccca1de1ce5ed176a90152ba7b25gFuHPRT2A5WVA0Ud9wLN3w==');
+    var pass = cpass.decode('7f76e1a7442cc07b4dffac81abc13ae50fef41620cf031119eeb002d723c0177945758d1fc8eee5ca8684e145c33b834yS/xxh4cGUSthIG0ahDomw==');
     var spformsHelper = spforms({username:'dmolodtsov@jolera.com', password: pass});
     
     var siteSettings = {
@@ -48,8 +48,48 @@ gulp.task('getLists', _=>{
 
 });
 
+
+gulp.task('getListId', _=>{
+
+    var pass = cpass.decode('7f76e1a7442cc07b4dffac81abc13ae50fef41620cf031119eeb002d723c0177945758d1fc8eee5ca8684e145c33b834yS/xxh4cGUSthIG0ahDomw==');
+    var spformsHelper = spforms({username:'dmolodtsov@jolera.com', password: pass});
+    
+    var siteSettings = {
+        siteUrl: 'https://jolera365.sharepoint.com/sites/senate/',
+    };
+
+    var listSettings = {
+        listTitle: 'NewList',
+    };
+
+    spformsHelper.getListId(siteSettings, listSettings).then(function(results){
+        console.log(results);
+    });
+
+});
+
+
+gulp.task('createList', _=>{
+
+    var pass = cpass.decode('7f76e1a7442cc07b4dffac81abc13ae50fef41620cf031119eeb002d723c0177945758d1fc8eee5ca8684e145c33b834yS/xxh4cGUSthIG0ahDomw==');
+    var spformsHelper = spforms({username:'dmolodtsov@jolera.com', password: pass});
+    
+    var siteSettings = {
+        siteUrl: 'https://jolera365.sharepoint.com/sites/senate/',
+    };
+
+    var listSettings = {
+        listTitle: 'NewList',
+    };
+
+    spformsHelper.createList(siteSettings, listSettings).then(function(){
+        
+    });
+
+});
+
 gulp.task('generate',_=>{
-    var pass = cpass.decode('0997200ebb3852ac6fffcc9f17d2e5adac85ba4a83a18c9187712d4134fafd9e67a4ccca1de1ce5ed176a90152ba7b25gFuHPRT2A5WVA0Ud9wLN3w==');
+    var pass = cpass.decode('7f76e1a7442cc07b4dffac81abc13ae50fef41620cf031119eeb002d723c0177945758d1fc8eee5ca8684e145c33b834yS/xxh4cGUSthIG0ahDomw==');
     var spformsHelper = spforms({username:'dmolodtsov@jolera.com', password: pass});
     
     var listSettings = {

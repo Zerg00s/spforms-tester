@@ -1,5 +1,5 @@
 ﻿<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="../../DEPLOYMENT_FOLDER/App/styles/common.css?ver=9" rel="stylesheet" type="text/css">
+<link href="../../Assets/App/styles/common.css?ver=9" rel="stylesheet" type="text/css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 <div ng-app="app" ng-controller="MainCtrl" id='MainCtrl' ng-cloak>
@@ -20,11 +20,11 @@
                     </div>
                 </div>
             
-                <div data-ng-include="'../../DEPLOYMENT_FOLDER/App/Forms/LIST_NAME/LIST_NAMEFields.html?ver=9'" > </div>
+                <div data-ng-include="'../../Assets/App/Forms/test/testFields.html?ver=9'" > </div>
 
                 <div class="col-md-12">
                     <h4>Attachments</h4>
-                    <file-uploader control-id="'attachments1'" show-display-name-field="false" attachment-filter-field-name="'ParentItemID'" />
+                    <file-uploader control-id="'attachments1'" show-display-name-field="false" attachment-filter-field-name="'test'" />
                 </div>
             
                 <div class="row non-printable">
@@ -46,10 +46,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
 
-<script src="../../DEPLOYMENT_FOLDER/App/app.js?ver=9"></script>
-<script src="../../DEPLOYMENT_FOLDER/App/services/spFormFactory.js?ver=9"></script>
-<script src="../../DEPLOYMENT_FOLDER/App/directives/commonDirectives.js?ver=9"></script>
-<script src="../../DEPLOYMENT_FOLDER/App/Forms/LIST_NAME/LIST_NAMEController.js?ver=9"></script>
+<script src="../../Assets/App/app.js?ver=9"></script>
+<script src="../../Assets/App/services/spFormFactory.js?ver=9"></script>
+<script src="../../Assets/App/directives/commonDirectives.js?ver=9"></script>
+<script src="../../Assets/App/Forms/test/testController.js?ver=9"></script>
 
 
 <!-- Load third party scripts required by the people picker -->
@@ -62,10 +62,10 @@
 
 
 <!-- ****** The following script contains the people picker directive. ****** -->
-<script src="../../DEPLOYMENT_FOLDER/App/modules/peoplepicker/config/config.peoplepicker.js"></script>
-<script src="../../DEPLOYMENT_FOLDER/App/modules/peoplepicker/scripts/angular-sanitize.min.js"></script>
-<script src="../../DEPLOYMENT_FOLDER/App/modules/peoplepicker/scripts/angular-resource.min.js"></script>
-<script src="../../DEPLOYMENT_FOLDER/App/modules/peoplepicker/scripts/angular-route.min.js"></script>
+<script src="../../Assets/App/modules/peoplepicker/config/config.peoplepicker.js"></script>
+<script src="../../Assets/App/modules/peoplepicker/scripts/angular-sanitize.min.js"></script>
+<script src="../../Assets/App/modules/peoplepicker/scripts/angular-resource.min.js"></script>
+<script src="../../Assets/App/modules/peoplepicker/scripts/angular-route.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
-<script src="../../DEPLOYMENT_FOLDER/App/modules/ng-currency.js"></script>
+<script src="../../Assets/App/modules/ng-currency.js"></script>

@@ -75,7 +75,9 @@ app.directive('fileUploader', function($parse, $timeout, $q, spFormFactory) {
             controlId: '=?',
             attachmentDocLibName: '=?',
             attachmentDocFolderName: '=?',
-            attachmentFilterFieldName: '=?',
+            attachmentFilterFieldName: '=',
+            //attachmentFilterFieldName
+            //attachment-filter-field-name
             showDisplayNameField: '='
         },
 
@@ -214,7 +216,10 @@ app.directive('fileUploader', function($parse, $timeout, $q, spFormFactory) {
             if (!window.FileReader) model.fileReaderUnsupported = true;
 
             scope.controlId = scope.controlId || 'fileuploader';
-            scope.attachmentDocLibName = scope.attachmentDocLibName || 'Attachments';
+            scope.attachmentDocLibName = scope.attachmentDocLibName || 'Attachments'; 
+            console.log('attachmentFilterFieldName: '+ scope.attachmentFilterFieldName);
+            console.log('show-display-name-field: '+ scope.showDisplayNameField);
+            
             scope.attachmentFilterFieldName = scope.attachmentFilterFieldName || 'ParentItemID';
             scope.attachmentDocFolderName = scope.attachmentDocFolderName || '';
 
